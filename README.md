@@ -9,7 +9,7 @@ The particularity of this device will be the treatment of the sound totally cont
 Open hardware solutions able to deal with sound are quite limited today, three of them are emerging, Axoloti, Bela and Raspberry Pi. 
 We choose to begin with the Raspberry Pi for it’s user-friendly interface and to associate it with Pure Data.
 
-[Imgur](https://i.imgur.com/dnFZhXI.png)
+![Rasp-pd-out](https://i.imgur.com/dnFZhXI.png)
 
 ## Pure Data & WiringPi
 
@@ -24,7 +24,7 @@ We didn’t found a Pd i2s object for the moment, if you know one don’t hesita
 i2s is the most adapted and also most used communication protocol for digital audio application and allows stereo transmission.
 It is composed of 3 wires, a global clock (BCLK), a second clock 32 times slower to indicate the right or left channel (LRCK) and a Data wire (DOUT).
 
-[Imgur](https://i.imgur.com/Uc3VMHv.jpg)
+![Imgur](https://i.imgur.com/Uc3VMHv.jpg)
 
 The LRCK clock is running at 48KHz, during its high level, the 16 bits of the Data represent the right channel and low level the 16 bits of left channel. The BCLK is running at 1,536MHz in order to send the Data flow.
 
