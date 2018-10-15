@@ -39,10 +39,15 @@ Because of the lack of simple object realizing what we want (we could do it with
 
 ## Pure Data Externals in C
 
-Creating my its own objects in C is not an easy task, it is not documented a lot.
+Creating my own objects in C is not an easy task, it is not much documented.
 I found two tutorials, the pure-data/externals-howto GitHub project and the cheetomoskeeto/pd-externals-c GitHub with a series of 11 Youtube videos.
 
 Following this exemples we tried to begin by a simple [through~] object that just output the audio signal given at the input.
-After compling this object for our Raspberry the library file "through~.pd_linux" is recognized by Pure Data but the software is crashing and return a segmentation fault.
+After creating this object, we want to move forward to the purpose of the project and create in a second time two objects.
+
+The first one will convert the input of type signal into a 16 bits integer output written in two's complements (the i2s data format).
+The other needs to output a binary signal from a 16 bits integer at a given frequency (to have a 48kHz frequency on our i2s output we need to write binary at a speed of 1,536MHz).
+
+Once we will have this 2 objects, we want to end up with a global object able to generate i2s from a signal type message in pure data. 
 
 We hope this project achieved to attract your interest and a little help to continue would be very appreciated :D
