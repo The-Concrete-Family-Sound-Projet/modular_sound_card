@@ -1,4 +1,4 @@
-#through~
+# through~
 
 This object is a test in the understanding of writing pd external objects in C
 
