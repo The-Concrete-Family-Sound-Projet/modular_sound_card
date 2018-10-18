@@ -2,4 +2,4 @@
 
 First step for the i2s object
 
-We want to convert the audio signal into an integer in two's complements
+We want to convert the __audio signal__ into an __integer__ in two's complements
